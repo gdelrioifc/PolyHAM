@@ -1,1 +1,24 @@
+This directory contains 2 files that are supplementary to the original work entitled "Machine-learning classification of polypharmacologic human-targeted and antimicrobial chemical compounds".
 
+These 2 files are the coded used to obtain the publications for any chemical structure (SMILES format) in the training or testing sets.
+
+To use any one of these codes, it is necessary to have the JVM installed locally in your computer and then type in your console:
+
+javac GetPubMedEntriesFromSMILESTraining.java
+
+This will create a GetPubMedEntriesFromSMILESTraining.class file in your directory, that you can invoke by typing in your console:
+
+java GetPubMedEntriesFromSMILES
+
+After that, you will see the following legend:
+
+Usage:
+java GetPubMedEntriesFromSMILES <infile>
+<infile> is the file named TableS1_Prestwick_STRINGWithNames.tsv in this dir.
+The program will get the SMILES listed in <infile> and get PubMedIDs related to each of them,
+then will save in MEDLINE format each of the PubMedIDs to a file that will have the name of the
+CID found in <infile> for each SMILES.
+
+The file TableS1_Prestwick_STRINGWithNames.tsv is provided in this dir as well.
+
+In the case of the code named GetPubMedEntriesFromSMILESTesting, you will need the file named hmdbmetab-metabolites.csv, that is also provided.

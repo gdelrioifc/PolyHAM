@@ -1,1 +1,13 @@
+This directory contains 3 files that are supplementary to the original work entitled "Machine-learning classification of polypharmacologic human-targeted and antimicrobial chemical compounds".
+
+These 3 files are clickable tables, including:
+
+
+i) Table S1. PubMed Citations with ontological terms associated with antimicrobial activity. The name of the compound (clicking on it will display the corresponding PubChem entry), the number of publications (PMID) referring to the compound that included the ontological terms listed at the bottom of the table and, whether the compound is considered antimicrobial o not. 
+
+ii) Table S2. PolyHAM in training set. A subset from Table S1 containing drugs known to act through a human target that have antimicrobial activity.
+
+iii) Table S3. Testing set. Human metabolites with publications in PubChem referring to antimicrobial activities.
+
+Any of these files were derived from a code named GetPubMedEntriesFromSMILES that is found under the subdirectory Codes.
 

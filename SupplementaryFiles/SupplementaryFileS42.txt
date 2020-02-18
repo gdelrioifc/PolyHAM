@@ -1,0 +1,23 @@
+nohup java -Xmx10G -cp weka.jar:. weka.classifiers.meta.AttributeSelectedClassifier -t SupplementaryFileS28.arff -x 10 -E "weka.attributeSelection.CfsSubsetEval -M -L" -S "weka.attributeSelection.GreedyStepwise -C -R" -W weka.classifiers.meta.AdaBoostM1 -- -P 100 -I 21 -Q -S 1 -W weka.classifiers.trees.RandomForest -- -I 23 -K 18 -depth 9 > SupplementaryFileS28.cv10_out &
+
+nohup java -Xmx10G -cp weka.jar:. weka.classifiers.meta.AttributeSelectedClassifier -t SupplementaryFileS29.arff -x 10 -E "weka.attributeSelection.CfsSubsetEval -L" -S "weka.attributeSelection.GreedyStepwise -C -R" -W weka.classifiers.trees.RandomForest -- -I 239 -K 0 -depth 13 > SupplementaryFileS29.cv10_out &
+
+nohup java -Xmx10G -cp weka.jar:. weka.classifiers.trees.RandomForest -t SupplementaryFileS30.arff -x 10 -I 248 -K 0 -depth 0 > SupplementaryFileS30.cv10_out &
+
+nohup java -Xmx10G -cp weka.jar:. weka.classifiers.meta.AttributeSelectedClassifier -t SupplementaryFileS31.arff -x 10 -E "weka.attributeSelection.CfsSubsetEval -M -L" -S "weka.attributeSelection.GreedyStepwise -B -R" -W weka.classifiers.meta.RandomCommittee -- -I 17 -S 1 -W weka.classifiers.trees.RandomForest -- -I 214 -K 18 -depth 0 > SupplementaryFileS31.cv10_out &
+
+nohup java -Xmx10G -cp weka.jar:. weka.classifiers.meta.AttributeSelectedClassifier -t SupplementaryFileS32.arff -x 10 -E "weka.attributeSelection.CfsSubsetEval -M -L" -S "weka.attributeSelection.BestFirst -D 0 -N 9" -W weka.classifiers.meta.AdaBoostM1 -- -P 100 -I 57 -Q -S 1 -W weka.classifiers.trees.LMT -- -R -P -M 8 -W 0 -A > SupplementaryFileS3SupplementaryFileS322.cv10_out &
+
+nohup java -Xmx10G -cp weka-3-8-1/weka.jar:. weka.classifiers.meta.AttributeSelectedClassifier -t SupplementaryFileS33.arff -x 10 -E "weka.attributeSelection.CfsSubsetEval -L" -S "weka.attributeSelection.BestFirst -D 0 -N 8" -W weka.classifiers.functions.SMO -- -C 1.3842300789345094 -N 1 -K "weka.classifiers.functions.supportVector.Puk -S 9.730434901835693 -O 0.5993797577616751" > SupplementaryFileS33.cv10_out &
+
+nohup java -Xmx10G -cp weka.jar:. weka.classifiers.functions.SMO -t SupplementaryFileS34.arff -x 10 -C 1.3752133275857212 -N 0 -K "weka.classifiers.functions.supportVector.Puk -S  0.47372132258078903 -O 0.7741125210334527" > SupplementaryFileS34.cv10_out &
+
+nohup java -Xmx10G -cp weka-3-8-1/weka.jar:. weka.classifiers.meta.AdaBoostM1 -t SupplementaryFileS35.arff -x 10 -P 98 -I 63 -Q -S 1 -W weka.classifiers.functions.MultilayerPerceptron -- -L 0.6275562087810288 -M 0.5849419854710113 -B -H i -S 1 > SupplementaryFileS35.cv10_out &
+
+nohup java -Xmx10G -cp weka.jar:. weka.classifiers.meta.AttributeSelectedClassifier -t SupplementaryFileS36.arff -x 10 -E "weka.attributeSelection.CfsSubsetEval -L" -S "weka.attributeSelection.GreedyStepwise -C -R" -W weka.classifiers.trees.RandomForest -- -I 239 -K 0 -depth 13 > SupplementaryFileS36.cv10_out &
+
+nohup java -Xmx10G -cp weka.jar:. weka.classifiers.meta.AttributeSelectedClassifier -t SupplementaryFileS37.arff -x 10 -E "weka.attributeSelection.CfsSubsetEval -L" -S "weka.attributeSelection.GreedyStepwise -C -R" -W weka.classifiers.trees.RandomForest -- -I 239 -K 0 -depth 13 > SupplementaryFileS37.cv10_out &
+
+nohup java -Xmx10G -cp weka.jar:. weka.classifiers.meta.AttributeSelectedClassifier -t SupplementaryFileS38.arff -x 10 -E "weka.attributeSelection.CfsSubsetEval -L" -S "weka.attributeSelection.GreedyStepwise -C -R" -W weka.classifiers.trees.RandomForest -- -I 239 -K 0 -depth 13 > SupplementaryFileS38.cv10_out &
+
+nohup java -Xmx10G -cp weka.jar:. weka.classifiers.trees.RandomForest -t SupplementaryFileS39.arff -x 10 -I 189 -K 0 -depth 14 > SupplementaryFileS39.cv10_out &

@@ -1,0 +1,23 @@
+nohup java -Xmx10G -cp weka.jar:. weka.classifiers.trees.RandomForest -t SupplementaryFileS16.arff -x 10 -I 248 -K 0 -depth 0 > SupplementaryFileS16.cv10_out &
+
+nohup java -Xmx10G -cp weka.jar:. weka.classifiers.meta.AttributeSelectedClassifier -t SupplementaryFileS17.arff -x 10 -E "weka.attributeSelection.CfsSubsetEval -L" -S "weka.attributeSelection.GreedyStepwise -C -R" -W weka.classifiers.trees.RandomForest -- -I 239 -K 0 -depth 13 > SupplementaryFileS17.cv10_out &
+
+nohup java -Xmx10G -cp weka.jar:. weka.classifiers.meta.AttributeSelectedClassifier -t SupplementaryFileS18.arff -x 10 -E "weka.attributeSelection.CfsSubsetEval" -S "weka.attributeSelection.BestFirst -D 0 -N 6" -W weka.classifiers.meta.RandomCommittee -- -I 55 -S 1 -W weka.classifiers.trees.RandomForest -- -I 59 -K 0 -depth 0 > SupplementaryFileS18.cv10_out &
+
+nohup java -Xmx10G -cp weka.jar:. weka.classifiers.trees.RandomForest -t SupplementaryFileS19.arff -x 10 -I 19 -K 0 -depth 18 > SupplementaryFileS19.cv10_out &
+
+nohup java -Xmx10G -cp weka.jar:. weka.classifiers.functions.MultilayerPerceptron -t SupplementaryFileS20.arff -x 10 -L 0.7390460408175755 -M 0.3382165722332805 -H a -C -R -D -S 1 > SupplementaryFileS20.cv10_out &
+
+nohup java -Xmx10G -cp weka.jar:. weka.classifiers.functions.MultilayerPerceptron -t SupplementaryFileS21.arff -x 10  -L 0.7390460408175755 -M 0.3382165722332805 -H a -C -R -D -S 1 > SupplementaryFileS21.cv10_out &
+
+nohup java -Xmx10G -cp weka.jar:. weka.classifiers.lazy.IBk -t SupplementaryFileS22.arff -x 10 -E -K 63 -X > SupplementaryFileS22.cv10_out &
+
+nohup java -Xmx10G -cp weka.jar:. weka.classifiers.meta.AttributeSelectedClassifier -t SupplementaryFileS23.arff -x 10 -E "weka.attributeSelection.CfsSubsetEval -L" -S "weka.attributeSelection.GreedyStepwise -R" -W weka.classifiers.meta.Vote -- -R MAJ -S 1 -B "weka.classifiers.lazy.KStar -B 32 -M n" -B "weka.classifiers.rules.JRip -N 4.9583440364964275 -P -O 4" -B "weka.classifiers.rules.DecisionTable -E rmse -I -X 4 -S \"weka.attributeSelection.BestFirst\"" -B "weka.classifiers.trees.RandomForest -I 20 -K 2 -depth 0" > SupplementaryFileS23.cv10_out &
+
+nohup java -Xmx10G -cp weka.jar:. weka.classifiers.meta.AttributeSelectedClassifier -t SupplementaryFileS24.arff -x 10 -E "weka.attributeSelection.CfsSubsetEval -L" -S "weka.attributeSelection.GreedyStepwise -C -R" -W weka.classifiers.trees.RandomForest -- -I 239 -K 0 -depth 13 > SupplementaryFileS24.cv10_out &
+
+nohup java -Xmx10G -cp weka.jar:. weka.classifiers.meta.AttributeSelectedClassifier -t SupplementaryFileS25.arff -x 10 -E "weka.attributeSelection.CfsSubsetEval -L" -S "weka.attributeSelection.GreedyStepwise -C -R" -W weka.classifiers.trees.RandomForest -- -I 239 -K 0 -depth 13 > SupplementaryFileS25.cv10_out &
+
+nohup java -Xmx10G -cp weka.jar:. weka.classifiers.trees.RandomForest -t SupplementaryFileS26.arff -x 10 -I 16 -K 0 -depth 19 > SupplementaryFileS26.cv10_out &
+
+nohup java -Xmx10G -cp weka.jar:. weka.classifiers.trees.RandomForest -t SupplementaryFileS27.arff -x 10 -I 159 -K 26 -depth 0 > SupplementaryFileS27.cv10_out &

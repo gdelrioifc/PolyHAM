@@ -10,3 +10,5 @@ ii) Supplementary files
 iii) HTML clickable tables
 
 Each one of these directories contains a README file where the list of files included in each are described. Please read these README files for further information.
+
+Please download the whole contents of this repository so you can see and interact with the files. Otherwise, many files wont be displayed because of their size or your broser wont display them as instructions for the browser, but as text.

@@ -9,3 +9,4 @@ ii) Supplementary files
 
 iii) HTML clickable tables
 
+Each one of these directories contains a README file where the list of files included in each are described. Please read these README files for further information.

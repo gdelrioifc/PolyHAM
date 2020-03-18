@@ -11,3 +11,5 @@ iii) Table S3. Testing set. Human metabolites with publications in PubChem refer
 
 Any of these files were derived from a code named GetPubMedEntriesFromSMILES that is found under the subdirectory Codes.
 
+Please note that any of these files need to be downloaded into your computer first, and then open with a browser to have access to the interaction functions.
+

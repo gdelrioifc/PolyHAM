@@ -7,6 +7,8 @@ i) 3 files in TSV format with the compound ID, name and SMILES formula: Suppleme
 
 ii) 28 files in ARFF format, with the attributes for each of the compounds derived from the 3 TSV files plus peptides in the case of heterologous training sets: SupplementaryFileS4-S39.
 
-iii) 3 files in txt format, corresponding to the scripts needed to execute WEKA's best models cross-validation test for each training set: SupplementaryFileS28,29,30.
+iii) 3 files with statistical parameters reporting the learning efficiencies obtained for each training set: Supplementary files S40-S42.txt.
+
+iv) 3 files in txt format, corresponding to the scripts needed to execute WEKA's best models cross-validation test for each training set: SupplementaryFileS43-S45.
 
 Some of the files are too large and were splitted into two halves (a and b); to use them, simple add part b at the end of part a.

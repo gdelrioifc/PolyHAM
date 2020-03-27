@@ -1,5 +1,5 @@
 # PolyHAM
-Supplementary material for the work entitled "Machine-learning classification of polypharmacologic human-targeted and antimicrobial chemical compounds" by Gabriel Del Rio and Carlos A. Brizuela
+Supplementary material for the work entitled "Machine-learning classification of polypharmacologic human-targeted and antimicrobial chemical compounds".
 
 This site contains 3 directories where you will find:
 

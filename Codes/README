@@ -1,6 +1,6 @@
-This directory contains 2 files that are supplementary to the original work entitled "Machine-learning classification of polypharmacologic human-targeted and antimicrobial chemical compounds".
+This directory contains 3 codes that are supplementary to the original work entitled "Machine-learning classification of polypharmacologic human-targeted and antimicrobial chemical compounds".
 
-These 2 files are the coded used to obtain the publications for any chemical structure (SMILES format) in the training or testing sets.
+Two of these files are the codes used to obtain the publications for any chemical structure (SMILES format) in the training or testing sets. The other code is to convert FASTA sequence files into MOL2 format.
 
 To use any one of these codes, it is necessary to have the JVM installed locally in your computer and then type in your console:
 
@@ -8,12 +8,12 @@ javac GetPubMedEntriesFromSMILESTraining.java
 
 This will create a GetPubMedEntriesFromSMILESTraining.class file in your directory, that you can invoke by typing in your console:
 
-java GetPubMedEntriesFromSMILES
+java GetPubMedEntriesFromSMILESTraining
 
 After that, you will see the following legend:
 
 Usage:
-java GetPubMedEntriesFromSMILES <infile>
+java GetPubMedEntriesFromSMILESTraining <infile>
 <infile> is the file named TableS1_Prestwick_STRINGWithNames.tsv in this dir.
 The program will get the SMILES listed in <infile> and get PubMedIDs related to each of them,
 then will save in MEDLINE format each of the PubMedIDs to a file that will have the name of the
@@ -22,3 +22,5 @@ CID found in <infile> for each SMILES.
 The file TableS1_Prestwick_STRINGWithNames.tsv is provided in this dir as well.
 
 In the case of the code named GetPubMedEntriesFromSMILESTesting, you will need the file named hmdbmetab-metabolites.csv, that is also provided.
+
+Finally, we also provide the jar file SEQ2MOL.jar and a manual to facilitate its use (SEQ2MOL_Tutorial.pdf). This jar file was used to convert FASTA protein sequence files into MOL2 files that are accepted by PaDelDescriptor.

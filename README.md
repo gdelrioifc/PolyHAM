@@ -7,7 +7,7 @@ i) Codes in Java language and associated files required to test them.
 
 ii) Supplementary files 
 
-iii) HTML clickable tables
+iii) <a href="docs/index.html">HTML clickable tables</a>
 
 Each one of these directories contains a README file where the list of files included in each are described. Please read these README files for further information.
 

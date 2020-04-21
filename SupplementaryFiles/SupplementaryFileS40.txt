@@ -1,0 +1,18 @@
+FileName,TPClass1,FPClass1,FPClass2,TPClass2,MCC
+hetero_trainingSetWithClassNominal_Normalized.outTestWithConfusionMatrix,4436,154,48,8088,0.966
+hetero_trainingSetWithClassNominal_Normalized_selectAttr.outTestWithConfusionMatrix,4587,3,1,8135,0.999
+hetero_trainingSetWithClassNominal.outTestWithConfusionMatrix,4450,140,47,8089,0.968
+hetero_trainingSetWithClassNominal_selectAttr.outTestWithConfusionMatrix,4234,356,78,8058,0.926
+homonpqc_trainingSetWithClassNominal_Normalized.outTestWithConfusionMatrix,1043,1,31,106,0.862
+homonpqc_trainingSetWithClassNominal_Normalized_selectAttr.outTestWithConfusionMatrix,1041,3,35,102,0.834
+homonpqc_trainingSetWithClassNominal.outTestWithConfusionMatrix,1043,1,36,101,0.839
+homonpqc_trainingSetWithClassNominal_selectAttr.outTestWithConfusionMatrix,1041,3,43,94,0.797
+homopep_trainingSetWithClassNominal_Normalized.outTestWithConfusionMatrix,3494,52,18,7981,0.986
+homopep_trainingSetWithClassNominal_Normalized_selectAttr.outTestWithConfusionMatrix,3537,9,19,7980,0.994
+homopep_trainingSetWithClassNominal.outTestWithConfusionMatrix,3487,59,20,7979,0.984
+homopep_trainingSetWithClassNominal_selectAttr.outTestWithConfusionMatrix,3404,142,37,7962,0.963
+TPClass1: true positive for class 1 (Antimicrobial)
+FPClass1: false positive for class 1
+FPClass2: false positive for class 2 (non-antimicrobials)
+TPClass2: true positive for class 2
+MCC: Matthews Correlation Coefficient
